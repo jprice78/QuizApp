@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.swdjcp.quizapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android questions txt"
+        android:id="@+id/qxtxView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp" android:textColor="@android:color/white"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:layout_marginLeft="84dp" android:layout_marginStart="84dp"
+        android:layout_marginTop="183dp" android:id="@+id/radioGroup"
+        android:layout_alignRight="@+id/qxtxView" android:layout_alignEnd="@+id/qxtxView">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/rb1" android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/rb2" android:textColor="@android:color/white"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/rb3" android:textColor="@android:color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btntxt"
+            android:id="@+id/btnSubmit"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
+            android:layout_marginTop="123dp" android:textColor="@android:color/black"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text1"
+        android:text="Attemps"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txtCorr" android:layout_alignLeft="@+id/qxtxView"
+        android:layout_alignStart="@+id/qxtxView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text2"
+        android:text="Correct"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAtm"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/Text1" android:layout_alignRight="@+id/Text1"
+        android:layout_alignEnd="@+id/Text1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCorr"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/Text2" android:layout_centerHorizontal="true"/>
+</RelativeLayout>
